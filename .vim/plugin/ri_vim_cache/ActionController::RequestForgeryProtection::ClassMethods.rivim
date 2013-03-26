@@ -1,0 +1,9 @@
+= ActionController::RequestForgeryProtection::ClassMethods
+
+(from gem actionpack-3.2.9)
+------------------------------------------------------------------------------
+= Instance methods:
+
+  protect_from_forgery
+
+

@@ -1,0 +1,10 @@
+= expectation
+
+(from gem shoulda-matchers-1.4.1)
+=== Implementation from Shoulda::Matchers::ActiveRecord::AcceptNestedAttributesForMatcher
+------------------------------------------------------------------------------
+  expectation()
+
+------------------------------------------------------------------------------
+
+

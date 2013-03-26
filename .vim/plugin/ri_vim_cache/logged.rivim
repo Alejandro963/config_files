@@ -1,0 +1,10 @@
+= logged
+
+(from gem activesupport-3.2.12)
+=== Implementation from ActiveSupport::LogSubscriber::TestHelper::MockLogger
+------------------------------------------------------------------------------
+  logged(level)
+
+------------------------------------------------------------------------------
+
+

@@ -1,0 +1,23 @@
+= ActiveRecord
+
+(from gem activerecord-3.2.9)
+------------------------------------------------------------------------------
+
+
+(from gem annotate-2.5.0)
+------------------------------------------------------------------------------
+monkey patches
+
+
+(from gem database_cleaner-0.7.2)
+------------------------------------------------------------------------------
+This file may seem to have duplication with that of truncation, but by keeping
+them separate we avoiding loading this code when it is not being used (which
+is the common case).
+
+
+------------------------------------------------------------------------------
+Also found in:
+  gem cucumber-rails-1.2.1
+  gem rspec-rails-2.12.0
+

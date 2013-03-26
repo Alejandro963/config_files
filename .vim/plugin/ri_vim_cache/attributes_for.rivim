@@ -1,0 +1,12 @@
+= attributes_for
+
+(from gem sprockets-2.2.2)
+=== Implementation from Sprockets::Base
+------------------------------------------------------------------------------
+  attributes_for(path)
+
+------------------------------------------------------------------------------
+
+Internal. Return a `AssetAttributes` for `path`.
+
+

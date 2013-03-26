@@ -1,0 +1,16 @@
+= Shoulda::Matchers::ActiveRecord::AcceptNestedAttributesForMatcher < Object
+
+(from gem shoulda-matchers-1.4.1)
+------------------------------------------------------------------------------
+= Class methods:
+
+  .new
+
+= Instance methods:
+
+  allow_destroy, allow_destroy_correct?, config, description, exists?,
+  expectation, failure_message, limit, limit_correct?, matches?, model_class,
+  model_config, negative_failure_message, should_or_should_not, update_only,
+  update_only_correct?, verify_option_is_correct
+
+

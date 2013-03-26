@@ -1,0 +1,27 @@
+= Zip
+
+(from gem rubyzip-0.9.9)
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+= Constants:
+
+EMPTY_FILE_RETURNS_EMPTY_STRING_FIRST:
+  Ruby 1.7.x compatibility In ruby 1.6.x and 1.8.0 reading from an empty
+  stream returns  an empty string the first time and then nil.
+    not so in 1.7.x
+
+RUBY_MINOR_VERSION:
+  [not documented]
+
+RUNNING_ON_WINDOWS:
+  [not documented]
+
+VERSION:
+  [not documented]
+
+= Class methods:
+
+  .options
+
+

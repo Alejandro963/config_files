@@ -1,0 +1,13 @@
+= ActiveRecord::Transactions
+
+(from gem activerecord-3.2.9)
+------------------------------------------------------------------------------
+See ActiveRecord::Transactions::ClassMethods for documentation.
+
+------------------------------------------------------------------------------
+= Instance methods:
+
+  add_to_transaction, rollback_active_record_state!, transaction,
+  with_transaction_returning_status
+
+

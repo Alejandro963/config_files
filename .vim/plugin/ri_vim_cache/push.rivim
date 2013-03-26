@@ -1,0 +1,262 @@
+= push
+
+(from ruby site)
+=== Implementation from Array
+------------------------------------------------------------------------------
+  ary.push(obj, ... )   -> ary
+
+------------------------------------------------------------------------------
+
+Append---Pushes the given object(s) on to the end of this array. This
+expression returns the array itself, so several appends may be chained
+together.
+
+  a = [ "a", "b", "c" ]
+  a.push("d", "e", "f")
+          #=> ["a", "b", "c", "d", "e", "f"]
+
+
+(from ruby site)
+=== Implementation from CSV::Row
+------------------------------------------------------------------------------
+  push(*args)
+
+------------------------------------------------------------------------------
+
+A shortcut for appending multiple fields.  Equivalent to:
+
+  args.each { |arg| csv_row << arg }
+
+This method returns the row for chaining.
+
+
+(from ruby site)
+=== Implementation from CSV::Table
+------------------------------------------------------------------------------
+  push(*rows)
+
+------------------------------------------------------------------------------
+
+A shortcut for appending multiple rows.  Equivalent to:
+
+  rows.each { |row| self << row }
+
+This method returns the table for chaining.
+
+
+(from gem capistrano-2.13.5)
+=== Implementation from Capistrano::Role
+------------------------------------------------------------------------------
+  push(*list)
+
+------------------------------------------------------------------------------
+
+
+(from gem hike-1.2.1)
+=== Implementation from Hike::NormalizedArray
+------------------------------------------------------------------------------
+  push(*elements)
+
+------------------------------------------------------------------------------
+
+
+(from ruby site)
+=== Implementation from IRB::History
+------------------------------------------------------------------------------
+  push(no, val)
+
+------------------------------------------------------------------------------
+
+
+(from gem net-ssh-2.6.2)
+=== Implementation from Net::SSH::Transport::Session
+------------------------------------------------------------------------------
+  push(packet)
+
+------------------------------------------------------------------------------
+
+Adds the given packet to the packet queue. If the queue is non-empty,
+#poll_message will return packets from the queue in the order they were
+received.
+
+
+(from gem nokogiri-1.5.6)
+=== Implementation from Nokogiri::XML::NodeSet
+------------------------------------------------------------------------------
+  push(node)
+
+------------------------------------------------------------------------------
+
+Append <tt>node</tt> to the NodeSet.
+
+
+(from gem pry-0.9.11.4)
+=== Implementation from Pry::Code
+------------------------------------------------------------------------------
+  push(line, lineno = nil)
+
+------------------------------------------------------------------------------
+
+Append the given line. <tt>lineno</tt> is one more than the last existing
+line, unless specified otherwise.
+
+@param [String] line @param [Integer?] lineno @return [String] The inserted
+line.
+
+
+(from gem pry-0.9.11.4)
+=== Implementation from Pry::History
+------------------------------------------------------------------------------
+  push(line)
+
+------------------------------------------------------------------------------
+
+Add a line to the input history, ignoring blank and duplicate lines. @param
+[String] line @return [String] The same line that was passed in
+
+
+(from ruby site)
+=== Implementation from Psych::TreeBuilder
+------------------------------------------------------------------------------
+  push(value)
+
+------------------------------------------------------------------------------
+
+
+(from ruby site)
+=== Implementation from Psych::Visitors::YAMLTree
+------------------------------------------------------------------------------
+  push(object)
+
+------------------------------------------------------------------------------
+
+
+(from ruby site)
+=== Implementation from Queue
+------------------------------------------------------------------------------
+  push(obj)
+
+------------------------------------------------------------------------------
+
+Pushes <tt>obj</tt> to the queue.
+
+
+(from gem rdoc-3.12)
+=== Implementation from RDoc::Markup::Document
+------------------------------------------------------------------------------
+  push(*parts)
+
+------------------------------------------------------------------------------
+
+Appends <tt>parts</tt> to the document
+
+
+(from ruby site)
+=== Implementation from RDoc::Markup::Document
+------------------------------------------------------------------------------
+  push(*parts)
+
+------------------------------------------------------------------------------
+
+Appends <tt>parts</tt> to the document
+
+
+(from ruby site)
+=== Implementation from RDoc::Markup::List
+------------------------------------------------------------------------------
+  push(*items)
+
+------------------------------------------------------------------------------
+
+Appends <tt>items</tt> to the list
+
+
+(from gem rdoc-3.12)
+=== Implementation from RDoc::Markup::List
+------------------------------------------------------------------------------
+  push(*items)
+
+------------------------------------------------------------------------------
+
+Appends <tt>items</tt> to the list
+
+
+(from ruby site)
+=== Implementation from RDoc::Markup::ListItem
+------------------------------------------------------------------------------
+  push(*parts)
+
+------------------------------------------------------------------------------
+
+Adds <tt>parts</tt> to the ListItem
+
+
+(from gem rdoc-3.12)
+=== Implementation from RDoc::Markup::ListItem
+------------------------------------------------------------------------------
+  push(*parts)
+
+------------------------------------------------------------------------------
+
+Adds <tt>parts</tt> to the ListItem
+
+
+(from ruby site)
+=== Implementation from RDoc::Markup::Raw
+------------------------------------------------------------------------------
+  push(*texts)
+
+------------------------------------------------------------------------------
+
+Appends <tt>texts</tt> onto this Paragraph
+
+
+(from gem rdoc-3.12)
+=== Implementation from RDoc::Markup::Raw
+------------------------------------------------------------------------------
+  push(*texts)
+
+------------------------------------------------------------------------------
+
+Appends <tt>texts</tt> onto this Paragraph
+
+
+(from ruby site)
+=== Implementation from REXML::Parent
+------------------------------------------------------------------------------
+  push( object )
+
+------------------------------------------------------------------------------
+
+
+(from gem ref-1.0.2)
+=== Implementation from Ref::ReferenceQueue
+------------------------------------------------------------------------------
+  push(reference)
+
+------------------------------------------------------------------------------
+
+Add a reference to the queue.
+
+
+(from ruby site)
+=== Implementation from Rinda::TupleBag
+------------------------------------------------------------------------------
+  push(tuple)
+
+------------------------------------------------------------------------------
+
+Add <tt>tuple</tt> to the TupleBag.
+
+
+(from ruby site)
+=== Implementation from SizedQueue
+------------------------------------------------------------------------------
+  push(obj)
+
+------------------------------------------------------------------------------
+
+Pushes <tt>obj</tt> to the queue.  If there is no space left in the queue,
+waits until space becomes available.
+
+

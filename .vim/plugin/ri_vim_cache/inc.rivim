@@ -1,0 +1,20 @@
+= inc
+
+(from ruby site)
+=== Implementation from OptionParser
+------------------------------------------------------------------------------
+  inc(arg, default = nil)
+
+------------------------------------------------------------------------------
+
+Returns an incremented value of <tt>default</tt> according to <tt>arg</tt>.
+
+
+(from ruby site)
+=== Implementation from OptionParser
+------------------------------------------------------------------------------
+  inc(*args)
+
+------------------------------------------------------------------------------
+
+

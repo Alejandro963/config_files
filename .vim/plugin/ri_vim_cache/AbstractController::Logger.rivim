@@ -1,0 +1,10 @@
+= AbstractController::Logger
+
+------------------------------------------------------------------------------
+= Includes:
+ActiveSupport::Benchmarkable (from gem actionpack-3.2.9)
+
+------------------------------------------------------------------------------
+Also found in:
+  gem actionpack-3.2.9
+

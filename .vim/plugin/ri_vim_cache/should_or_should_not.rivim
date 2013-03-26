@@ -1,0 +1,10 @@
+= should_or_should_not
+
+(from gem shoulda-matchers-1.4.1)
+=== Implementation from Shoulda::Matchers::ActiveRecord::AcceptNestedAttributesForMatcher
+------------------------------------------------------------------------------
+  should_or_should_not(value)
+
+------------------------------------------------------------------------------
+
+

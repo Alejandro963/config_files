@@ -1,0 +1,26 @@
+= class
+
+(from ruby site)
+=== Implementation from Object
+------------------------------------------------------------------------------
+  obj.class    -> class
+
+------------------------------------------------------------------------------
+
+Returns the class of <em>obj</em>. This method must always be called with an
+explicit receiver, as <tt>class</tt> is also a reserved word in Ruby.
+
+  1.class      #=> Fixnum
+  self.class   #=> Object
+
+
+(from ruby site)
+=== Implementation from Win32::Registry::PredefinedKey
+------------------------------------------------------------------------------
+  class()
+
+------------------------------------------------------------------------------
+
+Fake #class method for Registry#open, Registry#create
+
+

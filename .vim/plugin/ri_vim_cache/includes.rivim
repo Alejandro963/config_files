@@ -1,0 +1,24 @@
+= includes
+
+(from gem activerecord-3.2.9)
+=== Implementation from ActiveRecord::QueryMethods
+------------------------------------------------------------------------------
+  includes(*args)
+
+------------------------------------------------------------------------------
+
+
+(from ruby site)
+=== Implementation from RDoc::Context#includes
+------------------------------------------------------------------------------
+
+Modules this context includes
+
+
+(from gem rdoc-3.12.1)
+=== Implementation from RDoc::Context#includes
+------------------------------------------------------------------------------
+
+Modules this context includes
+
+

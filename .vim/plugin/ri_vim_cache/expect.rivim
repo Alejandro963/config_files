@@ -1,0 +1,55 @@
+= expect
+
+(from ruby site)
+=== Implementation from IO
+------------------------------------------------------------------------------
+  expect(pat,timeout=9999999) { |result| ... }
+
+------------------------------------------------------------------------------
+
+Reads from the IO until pattern <tt>pat</tt> matches or the <tt>timeout</tt>
+is over. It returns an array with the read buffer, followed by the matches. If
+a block is given, the result is yielded to the block and returns nil.
+
+The optional timeout parameter defines, in seconds, the total time to wait for
+the pattern.  If the timeout expires or eof is found, nil is returned or
+yielded.  However, the buffer in a timeout session is kept for the next expect
+call.  The default timeout is 9999999 seconds.
+
+
+(from ruby site)
+=== Implementation from MiniTest::Mock
+------------------------------------------------------------------------------
+  expect(name, retval, args=[])
+
+------------------------------------------------------------------------------
+
+Expect that method <tt>name</tt> is called, optionally with <tt>args</tt>, and
+returns <tt>retval</tt>.
+
+  @mock.expect(:meaning_of_life, 42)
+  @mock.meaning_of_life # => 42
+
+  @mock.expect(:do_something_with, true, [some_obj, true])
+  @mock.do_something_with(some_obj, true) # => true
+
+<tt>args</tt> is compared to the expected args using case equality (ie, the
+'===' operator), allowing for less specific expectations.
+
+  @mock.expect(:uses_any_string, true, [String])
+  @mock.uses_any_string("foo") # => true
+  @mock.verify  # => true
+
+  @mock.expect(:uses_one_string, true, ["foo"]
+  @mock.uses_one_string("bar") # => true
+  @mock.verify  # => raises MockExpectationError
+
+
+(from gem rspec-expectations-2.12.0)
+=== Implementation from RSpec::Expectations::Syntax
+------------------------------------------------------------------------------
+  expect(*target, &target_block)
+
+------------------------------------------------------------------------------
+
+

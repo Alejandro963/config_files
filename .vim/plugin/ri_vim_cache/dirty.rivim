@@ -1,0 +1,7 @@
+= dirty
+
+(from gem rubyzip-0.9.9)
+=== Implementation from Zip::ZipEntry#dirty
+------------------------------------------------------------------------------
+
+

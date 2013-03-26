@@ -1,0 +1,14 @@
+= ActiveRecord::Associations
+
+(from gem activerecord-3.2.9)
+------------------------------------------------------------------------------
+= Active Record Belongs To Has One Association
+= Active Record Has And Belongs To Many Association
+= Active Record Has One Through Association
+= Active Record Belongs To Associations
+= Active Record Belongs To Polymorphic Association
+= Active Record Has Many Through Association
+= Active Record Through Association
+= Active Record Has Many Association
+
+

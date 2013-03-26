@@ -1,0 +1,34 @@
+= flash
+
+(from gem actionpack-3.2.9)
+=== Implementation from ActionDispatch::Request
+------------------------------------------------------------------------------
+  flash()
+
+------------------------------------------------------------------------------
+
+Access the contents of the flash. Use <tt>flash["notice"]</tt> to read a
+notice you put there or <tt>flash["notice"] = "hello"</tt> to put a new one.
+
+
+(from gem actionpack-3.2.9)
+=== Implementation from ActionDispatch::TestProcess
+------------------------------------------------------------------------------
+  flash()
+
+------------------------------------------------------------------------------
+
+
+(from ruby site)
+=== Implementation from Curses
+------------------------------------------------------------------------------
+  flash()
+
+------------------------------------------------------------------------------
+
+Flashs the screen, for visual alarm on the terminal, if possible; otherwise it
+sounds the alert.
+
+see also Curses.beep
+
+

@@ -1,0 +1,12 @@
+= before_all_ivars
+
+(from gem rspec-core-2.12.2)
+=== Implementation from RSpec::Core::ExampleGroup
+------------------------------------------------------------------------------
+  before_all_ivars()
+
+------------------------------------------------------------------------------
+
+@private
+
+

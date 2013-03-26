@@ -1,0 +1,10 @@
+= predicate_select
+
+(from gem ransack-0.7.2)
+=== Implementation from Ransack::Helpers::FormBuilder
+------------------------------------------------------------------------------
+  predicate_select(options = {}, html_options = {})
+
+------------------------------------------------------------------------------
+
+

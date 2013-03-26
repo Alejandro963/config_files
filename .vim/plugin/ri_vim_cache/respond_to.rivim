@@ -1,0 +1,277 @@
+= respond_to
+
+(from gem actionpack-3.2.9)
+=== Implementation from ActionController::MimeResponds
+------------------------------------------------------------------------------
+  respond_to(*mimes, &block)
+
+------------------------------------------------------------------------------
+
+Without web-service support, an action which collects the data for displaying
+a list of people might look something like this:
+
+  def index
+    @people = Person.all
+  end
+
+Here's the same action, with web-service support baked in:
+
+  def index
+    @people = Person.all
+
+    respond_to do |format|
+      format.html
+      format.xml { render :xml => @people.to_xml }
+    end
+  end
+
+What that says is, "if the client wants HTML in response to this action, just
+respond as we would have before, but if the client wants XML, return them the
+list of people in XML format." (Rails determines the desired response format
+from the HTTP Accept header submitted by the client.)
+
+Supposing you have an action that adds a new person, optionally creating their
+company (by name) if it does not already exist, without web-services, it might
+look like this:
+
+  def create
+    @company = Company.find_or_create_by_name(params[:company][:name])
+    @person  = @company.people.create(params[:person])
+
+    redirect_to(person_list_url)
+  end
+
+Here's the same action, with web-service support baked in:
+
+  def create
+    company  = params[:person].delete(:company)
+    @company = Company.find_or_create_by_name(company[:name])
+    @person  = @company.people.create(params[:person])
+
+    respond_to do |format|
+      format.html { redirect_to(person_list_url) }
+      format.js
+      format.xml  { render :xml => @person.to_xml(:include => @company) }
+    end
+  end
+
+If the client wants HTML, we just redirect them back to the person list. If
+they want JavaScript, then it is an Ajax request and we render the JavaScript
+template associated with this action. Lastly, if the client wants XML, we
+render the created person as XML, but with a twist: we also include the
+person's company in the rendered XML, so you get something like this:
+
+  <person>
+    <id>...</id>
+    ...
+    <company>
+      <id>...</id>
+      <name>...</name>
+      ...
+    </company>
+  </person>
+
+Note, however, the extra bit at the top of that action:
+
+  company  = params[:person].delete(:company)
+  @company = Company.find_or_create_by_name(company[:name])
+
+This is because the incoming XML document (if a web-service request is in
+process) can only contain a single root-node. So, we have to rearrange things
+so that the request looks like this (url-encoded):
+
+  person[name]=...&person[company][name]=...&...
+
+And, like this (xml-encoded):
+
+  <person>
+    <name>...</name>
+    <company>
+      <name>...</name>
+    </company>
+  </person>
+
+In other words, we make the request so that it operates on a single entity's
+person. Then, in the action, we extract the company data from the request,
+find or create the company, and then create the new person with the remaining
+data.
+
+Note that you can define your own XML parameter parser which would allow you
+to describe multiple entities in a single request (i.e., by wrapping them all
+in a single root node), but if you just go with the flow and accept Rails'
+defaults, life will be much easier.
+
+If you need to use a MIME type which isn't supported by default, you can
+register your own handlers in config/initializers/mime_types.rb as follows.
+
+  Mime::Type.register "image/jpg", :jpg
+
+Respond to also allows you to specify a common block for different formats by
+using any:
+
+  def index
+    @people = Person.all
+
+    respond_to do |format|
+      format.html
+      format.any(:xml, :json) { render request.format.to_sym => @people }
+    end
+  end
+
+In the example above, if the format is xml, it will render:
+
+  render :xml => @people
+
+Or if the format is json:
+
+  render :json => @people
+
+Since this is a common pattern, you can use the class method respond_to with
+the respond_with method to have the same results:
+
+  class PeopleController < ApplicationController
+    respond_to :html, :xml, :json
+
+    def index
+      @people = Person.all
+      respond_with(@people)
+    end
+  end
+
+Be sure to check respond_with and respond_to documentation for more examples.
+
+
+(from gem actionpack-3.2.9)
+=== Implementation from ActionController::MimeResponds::ClassMethods
+------------------------------------------------------------------------------
+  respond_to(*mimes)
+
+------------------------------------------------------------------------------
+
+Defines mime types that are rendered by default when invoking
+<tt>respond_with</tt>.
+
+Examples:
+
+  respond_to :html, :xml, :json
+
+Specifies that all actions in the controller respond to requests for
+<tt>:html</tt>, <tt>:xml</tt> and <tt>:json</tt>.
+
+To specify on per-action basis, use <tt>:only</tt> and <tt>:except</tt> with
+an array of actions or a single action:
+
+  respond_to :html
+  respond_to :xml, :json, :except => [ :edit ]
+
+This specifies that all actions respond to <tt>:html</tt> and all actions
+except <tt>:edit</tt> respond to <tt>:xml</tt> and <tt>:json</tt>.
+
+  respond_to :json, :only => :create
+
+This specifies that the <tt>:create</tt> action and no other responds to
+<tt>:json</tt>.
+
+
+(from gem activeresource-3.2.9)
+=== Implementation from ActiveResource::HttpMock
+------------------------------------------------------------------------------
+  respond_to(*args) { |mock| ... }
+
+------------------------------------------------------------------------------
+
+Accepts a block which declares a set of requests and responses for the
+HttpMock to respond to in the following format:
+
+  mock.http_method(path, request_headers = {}, body = nil, status = 200, response_headers = {})
+
+=== Example
+
+  @matz  = { :person => { :id => 1, :name => "Matz" } }.to_json
+  ActiveResource::HttpMock.respond_to do |mock|
+    mock.post   "/people.json",   {}, @matz, 201, "Location" => "/people/1.json"
+    mock.get    "/people/1.json", {}, @matz
+    mock.put    "/people/1.json", {}, nil, 204
+    mock.delete "/people/1.json", {}, nil, 200
+  end
+
+Alternatively, accepts a hash of <tt>{Request => Response}</tt> pairs allowing
+you to generate these the following format:
+
+  ActiveResource::Request.new(method, path, body, request_headers)
+  ActiveResource::Response.new(body, status, response_headers)
+
+=== Example
+
+Request.new(:#{method}, path, nil, request_headers)
+
+  @matz  = { :person => { :id => 1, :name => "Matz" } }.to_json
+
+  create_matz      = ActiveResource::Request.new(:post, '/people.json', @matz, {})
+  created_response = ActiveResource::Response.new("", 201, {"Location" => "/people/1.json"})
+  get_matz         = ActiveResource::Request.new(:get, '/people/1.json', nil)
+  ok_response      = ActiveResource::Response.new("", 200, {})
+
+  pairs = {create_matz => created_response, get_matz => ok_response}
+
+  ActiveResource::HttpMock.respond_to(pairs)
+
+Note, by default, every time you call <tt>respond_to</tt>, any previous
+request and response pairs stored in HttpMock will be deleted giving you a
+clean slate to work on.
+
+If you want to override this behavior, pass in <tt>false</tt> as the last
+argument to <tt>respond_to</tt>
+
+=== Example
+
+  ActiveResource::HttpMock.respond_to do |mock|
+    mock.send(:get, "/people/1", {}, "JSON1")
+  end
+  ActiveResource::HttpMock.responses.length #=> 1
+
+  ActiveResource::HttpMock.respond_to(false) do |mock|
+    mock.send(:get, "/people/2", {}, "JSON2")
+  end
+  ActiveResource::HttpMock.responses.length #=> 2
+
+This also works with passing in generated pairs of requests and responses,
+again, just pass in false as the last argument:
+
+=== Example
+
+  ActiveResource::HttpMock.respond_to do |mock|
+    mock.send(:get, "/people/1", {}, "JSON1")
+  end
+  ActiveResource::HttpMock.responses.length #=> 1
+
+  get_matz         = ActiveResource::Request.new(:get, '/people/1.json', nil)
+  ok_response      = ActiveResource::Response.new("", 200, {})
+
+  pairs = {get_matz => ok_response}
+
+  ActiveResource::HttpMock.respond_to(pairs, false)
+  ActiveResource::HttpMock.responses.length #=> 2
+
+  # If you add a response with an existing request, it will be replaced
+
+  fail_response      = ActiveResource::Response.new("", 404, {})
+  pairs = {get_matz => fail_response}
+
+  ActiveResource::HttpMock.respond_to(pairs, false)
+  ActiveResource::HttpMock.responses.length #=> 2
+
+
+(from gem rspec-expectations-2.12.0)
+=== Implementation from RSpec::Matchers
+------------------------------------------------------------------------------
+  respond_to(*names)
+
+------------------------------------------------------------------------------
+
+Matches if the target object responds to all of the names provided. Names can
+be Strings or Symbols.
+
+@example
+
+

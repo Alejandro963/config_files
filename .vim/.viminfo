@@ -1,0 +1,1739 @@
+# Vim 7.3 generó este archivo "viminfo".
+# Puede editarlo, ¡sólo si tiene cuidado!
+
+# Valor de 'encoding' cuando se escribió este archivo
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# Último Patrón de búsqueda:
+~MSle0/deuda
+
+# Último SustituciónPatrón de búsqueda:
+~MSle0~&$ocultalinks
+
+# Última cadena de sustitución:
+$$imprcli
+
+# Historia de Línea de órdenes (de lo más nuevo a lo más antiguo):
+:qa
+:w
+:q
+:%s/$ocultalinks/$imprcli
+:Gdiff
+:%s/$diariocuentas\[$j/$movimientos\[$i
+:%s/$movimiento\['Movimiento']/$movimiento
+:%s/$movimientos\[$i]\['Movimiento']/$movimientos\[$i]
+:%s/$movimientos\[$i]\['Diariocuenta']/$diariocuentas\[$j]
+:%s/$movimientos\[$ii]\[/$movimientos\[$i]\[
+:%s/$movimientos\[$i]\['Diariocuenta']/$movimientos\[$ii]\['Diariocuenta']
+:%s/$movimientos\[$i]\['/$movimientos\[$ii]\['
+:%s/$movimientos\[$i]/$movimientos\[$ii]
+:%s/$movimientos\[$i]/$movimientos\[$i]
+:%s/$movimientos\[$ii/$movimientos\[$i
+:%s/$movimientos\[$i/$movimientos\[$ii
+:%s/$movvimientos\[$i/$movimientos\[$ii
+:%s/$movvimientos\[\\$i/$movimientos\[\\$ii
+:%s/$movvimientos\[\$i/$movimientos\[\$ii
+:%s/$movvimientos\[\$i/$movimientos\[\$j
+
+# Historia de Cadena de búsqueda (de lo más nuevo a lo más antiguo):
+? $ocultalinks
+?/deuda
+?/contables
+?/Contrapartida_contable
+?/contrapartidas
+?/before
+?/apert
+?/pend_
+?/vencimientos
+?/imprime_estado
+?//
+?/<//div
+?/<div
+? $diariocuentas\[$j
+?/movv
+? $movimiento\['Movimiento']
+? $movimientos\[$i]\['Movimiento']
+? $movimientos\[$i]\['Diariocuenta']
+? $movimientos\[$ii]\[
+? $movimientos\[$i]\['
+
+# Historia de Expresión (de lo más nuevo a lo más antiguo):
+
+# Historia de Línea de entrada (de lo más nuevo a lo más antiguo):
+@/home/alejandro/.config/google-chrome/
+@/home/alejandro/
+@/tmp/pru.1
+
+# Historia de Línea de entrada (de lo más nuevo a lo más antiguo):
+
+# Registros:
+"0@	CHAR	0
+	0wwwwwwwisig(wwwwwwa],lxlllr)j
+"1	LINE	0
+	
+"2	LINE	0
+		$sg = "";
+"3	LINE	0
+			$sg = "_sg";
+"4	LINE	0
+	
+"5	LINE	0
+			$sg = "_sg";
+"6	LINE	0
+	debug($sg);
+"7	LINE	0
+	debug($result);
+"8	LINE	0
+	debug($result);
+	debug(array_values($result));
+	debug(Set::extract($result,'{n}.value'));
+"9	LINE	0
+	debug($monedas);
+"i	CHAR	0
+	0i	j
+""-	CHAR	0
+	.
+
+# Marcas en el archivo:
+'G  1  0  ~/.vimrc
+'I  318  27  /opt/lampp/htdocs/finan/app/views/personas/view.ctp
+'0  114  94  /opt/lampp/htdocs/finan/app/views/elements/personas/deudafecha.ctp
+'1  22  0  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+'2  4  0  ~/.config/google-chrome/Default/Local Storage/NERD_tree_1
+'3  23  1  /opt/lampp/htdocs/finan/app/views/arqueos/add.ctp
+'4  86  27  /opt/lampp/htdocs/finan/app/views/layouts/default.ctp
+'5  297  2  /opt/lampp/htdocs/finan/app/controllers/personas_controller.php
+'6  307  0  /opt/lampp/htdocs/finan/app/views/personas/view.ctp
+'7  4  0  /media/PKBACK# 001/backup.git/finan/NERD_tree_1
+'8  63  0  ~/Ubuntu One/rails/sample_app/app/controllers/users_controller.rb
+'9  41  0  ~/Ubuntu One/rails/sample_app/NERD_tree_1
+
+# Lista de saltos (el más reciente va primero):
+-'  114  94  /opt/lampp/htdocs/finan/app/views/elements/personas/deudafecha.ctp
+-'  80  5  /opt/lampp/htdocs/finan/app/views/elements/personas/deudafecha.ctp
+-'  9  10  /opt/lampp/htdocs/finan/app/views/elements/personas/deudafecha.ctp
+-'  2  1  /opt/lampp/htdocs/finan/app/views/elements/personas/deudafecha.ctp
+-'  3  0  /opt/lampp/htdocs/finan/app/views/elements/personas/deudafecha.ctp
+-'  102  5  /opt/lampp/htdocs/finan/app/views/elements/personas/deudafecha.ctp
+-'  1  0  /opt/lampp/htdocs/finan/app/views/elements/personas/deudafecha.ctp
+-'  508  4  /opt/lampp/htdocs/finan/app/models/persona.php
+-'  1  0  /opt/lampp/htdocs/finan/app/models/persona.php
+-'  1  0  /opt/lampp/htdocs/finan/app/views/personas/imprime_estado.ctp
+-'  25  0  /opt/lampp/htdocs/finan/app/views/elements/personas/deudafecha.ctp
+-'  22  0  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  1173  1  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  1281  51  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  18  24  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  26  53  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  25  50  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  23  4  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  1283  6  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  1471  4  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  1472  4  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  993  33  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  994  18  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  995  31  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  1463  0  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  119  9  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  231  53  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  1  0  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  4  0  ~/.config/google-chrome/Default/Local Storage/NERD_tree_1
+-'  207  2  ~/.config/google-chrome/Default/Local Storage/NERD_tree_1
+-'  1  0  ~/.config/google-chrome/Default/Local Storage/NERD_tree_1
+-'  1  0  ~/.config/google-chrome/Default/Local Storage/https_trello.com_0.localstorage
+-'  23  1  /opt/lampp/htdocs/finan/app/views/arqueos/add.ctp
+-'  1  0  /opt/lampp/htdocs/finan/app/views/arqueos/add.ctp
+-'  86  27  /opt/lampp/htdocs/finan/app/views/layouts/default.ctp
+-'  88  12  /opt/lampp/htdocs/finan/app/views/layouts/default.ctp
+-'  1  0  /opt/lampp/htdocs/finan/app/views/layouts/default.ctp
+-'  1  0  /opt/lampp/htdocs/finan/app/app_controller.php
+-'  297  2  /opt/lampp/htdocs/finan/app/controllers/personas_controller.php
+-'  1  0  /opt/lampp/htdocs/finan/app/controllers/personas_controller.php
+-'  318  28  /opt/lampp/htdocs/finan/app/views/personas/view.ctp
+-'  1  0  /opt/lampp/htdocs/finan/app/views/personas/view.ctp
+-'  307  0  /opt/lampp/htdocs/finan/app/views/personas/view.ctp
+-'  77  5  /opt/lampp/htdocs/finan/app/views/personas/view.ctp
+-'  405  0  /opt/lampp/htdocs/finan/app/views/personas/view.ctp
+-'  370  9  /opt/lampp/htdocs/finan/app/views/personas/view.ctp
+-'  398  31  /opt/lampp/htdocs/finan/app/views/personas/view.ctp
+-'  292  24  /opt/lampp/htdocs/finan/app/controllers/personas_controller.php
+-'  309  102  /opt/lampp/htdocs/finan/app/controllers/personas_controller.php
+-'  300  6  /opt/lampp/htdocs/finan/app/controllers/personas_controller.php
+-'  50  0  /opt/lampp/htdocs/finan/app/controllers/cuentas_controller.php
+-'  1  0  /opt/lampp/htdocs/finan/app/controllers/cuentas_controller.php
+-'  45  2  /opt/lampp/htdocs/finan/app/views/elements/cuentas/movimientos.ctp
+-'  298  48  /opt/lampp/htdocs/finan/app/controllers/personas_controller.php
+-'  26  2  /opt/lampp/htdocs/finan/app/controllers/personas_controller.php
+-'  317  2  /opt/lampp/htdocs/finan/app/controllers/personas_controller.php
+-'  218  5  /opt/lampp/htdocs/finan/app/controllers/personas_controller.php
+-'  222  0  /opt/lampp/htdocs/finan/app/controllers/personas_controller.php
+-'  217  0  /opt/lampp/htdocs/finan/app/controllers/personas_controller.php
+-'  321  0  /opt/lampp/htdocs/finan/app/controllers/personas_controller.php
+-'  4  0  /media/PKBACK# 001/backup.git/finan/NERD_tree_1
+-'  10  2  /media/PKBACK# 001/backup.git/finan/NERD_tree_1
+-'  1  0  /media/PKBACK# 001/backup.git/finan/NERD_tree_1
+-'  63  0  ~/Ubuntu One/rails/sample_app/app/controllers/users_controller.rb
+-'  47  0  ~/Ubuntu One/rails/sample_app/app/controllers/users_controller.rb
+-'  1  0  ~/Ubuntu One/rails/sample_app/[BufExplorer]
+-'  70  10  ~/Ubuntu One/rails/sample_app/spec/requests/authentication_pages_spec.rb
+-'  1  0  ~/Ubuntu One/rails/sample_app/app/controllers/users_controller.rb
+-'  41  0  ~/Ubuntu One/rails/sample_app/NERD_tree_1
+-'  1  0  ~/Ubuntu One/rails/sample_app/NERD_tree_1
+-'  57  2  ~/Ubuntu One/rails/sample_app/NERD_tree_1
+-'  7  48  ~/Ubuntu One/rails/sample_app/lib/tasks/sample_data.rake
+-'  1  0  ~/Ubuntu One/rails/sample_app/lib/tasks/sample_data.rake
+-'  8  27  ~/Ubuntu One/rails/sample_app/lib/tasks/sample_data.rake
+-'  108  0  ~/Ubuntu One/rails/sample_app/NERD_tree_1
+-'  140  2  ~/Ubuntu One/rails/sample_app/NERD_tree_1
+-'  1  0  ~/Ubuntu One/rails/sample_app/Rakefile
+-'  148  1  ~/Ubuntu One/rails/sample_app/NERD_tree_1
+-'  210  2  ~/Ubuntu One/rails/sample_app/NERD_tree_1
+-'  1  0  ~/Ubuntu One/rails/sample_app/db/development.sqlite3
+-'  226  2  ~/Ubuntu One/rails/sample_app/NERD_tree_1
+-'  1  0  ~/Ubuntu One/rails/sample_app/spec/spec_helper.rb
+-'  243  2  ~/Ubuntu One/rails/sample_app/NERD_tree_1
+-'  577  69  /usr/share/vim/vim73/doc/map.txt
+-'  22  0  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  1173  1  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  1281  51  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  18  24  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  26  53  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  25  50  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  23  4  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+-'  1283  6  /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+
+# Historia de las marcas en los archivos (de la más reciente a la más antigua):
+
+> /opt/lampp/htdocs/finan/app/views/elements/personas/deudafecha.ctp
+	"	114	94
+	^	114	95
+	.	114	94
+	+	107	30
+	+	107	62
+	+	107	30
+	+	107	62
+	+	107	62
+	+	79	65
+	+	79	30
+	+	79	65
+	+	80	0
+	+	51	31
+	+	51	64
+	+	51	31
+	+	51	69
+	+	51	63
+	+	52	0
+	+	52	0
+	+	128	0
+	+	3	28
+	+	4	22
+	+	17	2
+	+	43	0
+	+	47	5
+	+	45	6
+	+	42	31
+	+	43	6
+	+	42	33
+	+	43	0
+	+	45	0
+	+	44	0
+	+	43	0
+	+	46	0
+	+	49	0
+	+	45	0
+	+	44	14
+	+	48	0
+	+	49	0
+	+	70	0
+	+	76	0
+	+	98	0
+	+	104	0
+	+	76	0
+	+	76	0
+	+	104	0
+	+	104	0
+	+	99	100
+	+	100	0
+	+	104	0
+	+	100	0
+	+	101	0
+	+	75	6
+	+	72	0
+	+	76	0
+	+	72	0
+	+	73	0
+	+	3	0
+	+	2	9
+	+	6	13
+	+	52	55
+	+	53	62
+	+	54	63
+	+	55	70
+	+	58	90
+	+	80	60
+	+	81	68
+	+	82	64
+	+	83	71
+	+	86	91
+	+	108	58
+	+	109	66
+	+	110	62
+	+	111	69
+	+	114	89
+	+	17	0
+	+	6	0
+	+	3	0
+	+	6	0
+	+	2	0
+	+	5	0
+	+	5	1
+	+	7	24
+	+	11	37
+	+	12	20
+	+	14	27
+	+	8	17
+	+	9	0
+	+	10	3
+	+	9	16
+	+	8	6
+	+	80	30
+	+	9	13
+	+	7	24
+	+	9	10
+	+	80	68
+	+	8	14
+	+	81	77
+	+	83	80
+	+	111	78
+	+	86	50
+	+	114	94
+
+> /opt/lampp/htdocs/finan/NERD_tree_1
+	"	7	0
+	^	6249	15
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /opt/lampp/htdocs/finan/app/views/personas/imprime_estado.ctp
+	"	18	86
+	^	18	87
+	.	18	86
+	+	81	0
+	+	86	30
+	+	93	0
+	+	23	5
+	+	24	19
+	+	64	21
+	+	24	0
+	+	23	0
+	+	69	58
+	+	78	75
+	+	81	0
+	+	112	51
+	+	21	0
+	+	52	0
+	+	55	38
+	+	119	0
+	+	120	0
+	+	18	0
+	+	16	39
+	+	25	0
+	+	120	0
+	+	120	0
+	+	25	0
+	+	20	0
+	+	26	0
+	+	27	0
+	+	26	0
+	+	27	0
+	+	51	1
+	+	23	20
+	+	24	14
+	+	31	19
+	+	29	51
+	+	37	37
+	+	38	8
+	+	37	0
+	+	29	58
+	+	29	0
+	+	31	30
+	+	32	19
+	+	35	0
+	+	38	37
+	+	39	19
+	+	42	0
+	+	37	5
+	+	37	32
+	+	37	28
+	+	50	0
+	+	50	0
+	+	50	0
+	+	50	31
+	+	50	28
+	+	50	46
+	+	50	32
+	+	50	37
+	+	50	33
+	+	30	37
+	+	37	5
+	+	37	42
+	+	50	36
+	+	50	51
+	+	50	5
+	+	50	41
+	+	50	0
+	+	37	0
+	+	50	0
+	+	42	0
+	+	50	0
+	+	42	0
+	+	37	0
+	+	35	0
+	+	32	16
+	+	37	16
+	+	39	16
+	+	50	0
+	+	37	0
+	+	33	0
+	+	35	0
+	+	40	0
+	+	42	0
+	+	37	0
+	+	44	0
+	+	36	0
+	+	37	0
+	+	43	0
+	+	44	0
+	+	46	0
+	+	24	0
+	+	7	37
+	+	10	4
+	+	8	41
+	+	9	18
+	+	10	0
+	+	11	56
+	+	12	18
+	+	12	0
+	+	9	15
+	+	10	36
+	+	11	44
+	+	18	86
+
+> /opt/lampp/htdocs/finan/app/models/persona.php
+	"	464	7
+
+> /opt/lampp/htdocs/finan/app/models/cuenta.php
+	"	284	0
+
+> /opt/lampp/htdocs/finan/app/views/transacciones/add.ctp
+	"	22	0
+	^	20	7
+	.	22	0
+	+	19	15
+	+	19	28
+	+	19	39
+	+	19	62
+	+	20	66
+	+	22	14
+	+	20	6
+	+	19	0
+	+	22	0
+
+> /opt/lampp/htdocs/finan/app/controllers/transacciones_controller.php
+	"	73	3
+	^	61	53
+	.	73	0
+	+	252	11
+	+	70	17
+	+	65	69
+	+	70	0
+	+	73	0
+	+	73	13
+	+	62	0
+	+	61	52
+	+	73	0
+
+> ~/.config/google-chrome/Default/Local Storage/https_trello.com_0.localstorage
+	"	1	2059
+
+> ~/.config/google-chrome/Default/Local Storage/NERD_tree_1
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /opt/lampp/htdocs/finan/app/views/arqueos/add.ctp
+	"	23	1
+	.	23	0
+	+	23	0
+
+> /opt/lampp/htdocs/finan/app/app_controller.php
+	"	146	40
+	^	146	40
+	.	146	40
+	+	146	0
+	+	145	20
+	+	146	40
+
+> /opt/lampp/htdocs/finan/app/views/layouts/default.ctp
+	"	86	27
+	^	88	38
+	.	86	27
+	+	86	27
+	+	88	37
+	+	86	27
+
+> /opt/lampp/htdocs/finan/app/views/personas/view.ctp
+	"	422	1
+	^	420	54
+	.	422	1
+	+	200	0
+	+	77	0
+	+	77	0
+	+	77	90
+	+	77	134
+	+	77	58
+	+	307	5
+	+	307	15
+	+	307	100
+	+	307	14
+	+	307	110
+	+	307	44
+	+	307	21
+	+	307	32
+	+	77	59
+	+	77	58
+	+	77	0
+	+	77	58
+	+	370	40
+	+	372	80
+	+	372	85
+	+	374	0
+	+	373	27
+	+	370	38
+	+	372	56
+	+	371	14
+	+	77	5
+	+	374	0
+	+	307	0
+	+	321	5
+	+	318	91
+	+	318	102
+	+	318	111
+	+	320	7
+	+	318	34
+	+	319	45
+	+	318	30
+	+	317	28
+	+	76	76
+	+	77	0
+	+	419	43
+	+	421	32
+	+	420	53
+	+	422	1
+
+> /opt/lampp/htdocs/finan/app/controllers/personas_controller.php
+	"	297	2
+	^	316	81
+	.	297	0
+	+	8	0
+	+	296	38
+	+	297	0
+	+	316	0
+	+	318	0
+	+	319	24
+	+	317	0
+	+	316	0
+	+	317	80
+	+	297	0
+	+	300	33
+	+	298	48
+	+	300	19
+	+	298	20
+	+	299	17
+	+	300	62
+	+	300	62
+	+	301	65
+	+	300	110
+	+	301	0
+	+	315	0
+	+	304	44
+	+	315	25
+	+	305	61
+	+	311	60
+	+	312	57
+	+	305	13
+	+	308	56
+	+	309	59
+	+	310	36
+	+	305	53
+	+	314	0
+	+	307	0
+	+	305	46
+	+	307	18
+	+	308	25
+	+	309	21
+	+	311	21
+	+	312	21
+	+	305	0
+	+	306	0
+	+	308	80
+	+	308	90
+	+	308	94
+	+	308	97
+	+	309	99
+	+	309	71
+	+	310	36
+	+	309	86
+	+	311	84
+	+	312	89
+	+	311	85
+	+	312	62
+	+	297	20
+	+	317	0
+	+	316	80
+	+	297	0
+
+> /opt/lampp/htdocs/finan/[BufExplorer]
+	"	1	0
+
+> /opt/lampp/htdocs/finan/app/views/elements/personas/documentos.ctp
+	"	38	6
+	^	47	13
+	.	4	0
+	+	34	0
+	+	68	0
+	+	47	26
+	+	48	8
+	+	48	147
+	+	48	152
+	+	48	163
+	+	48	176
+	+	48	180
+	+	47	11
+	+	47	0
+	+	50	0
+	+	47	0
+	+	48	0
+	+	48	109
+	+	48	114
+	+	28	0
+	+	27	30
+	+	47	12
+	+	4	0
+
+> /opt/lampp/htdocs/finan/app/views/transacciones/imprimir.ctp
+	"	55	0
+	^	36	16
+	.	28	0
+	+	233	0
+	+	273	13
+	+	279	111
+	+	296	79
+	+	3	0
+	+	296	0
+	+	230	0
+	+	231	55
+	+	234	0
+	+	282	0
+	+	299	2
+	+	300	1
+	+	307	1
+	+	233	18
+	+	3	0
+	+	248	4
+	+	239	62
+	+	244	4
+	+	247	0
+	+	242	29
+	+	265	3
+	+	234	0
+	+	248	0
+	+	301	10
+	+	306	2
+	+	3	0
+	+	27	5
+	+	28	0
+	+	28	0
+	+	28	0
+	+	3	0
+	+	11	0
+	+	14	0
+	+	14	0
+	+	13	0
+	+	15	0
+	+	17	0
+	+	10	7
+	+	12	8
+	+	14	11
+	+	16	8
+	+	17	9
+	+	15	11
+	+	13	8
+	+	11	6
+	+	10	27
+	+	10	32
+	+	12	34
+	+	14	37
+	+	16	34
+	+	17	36
+	+	15	37
+	+	13	34
+	+	11	32
+	+	68	17
+	+	150	17
+	+	87	20
+	+	106	23
+	+	125	20
+	+	169	20
+	+	188	23
+	+	207	20
+	+	230	95
+	+	3	0
+	+	23	13
+	+	151	12
+	+	150	17
+	+	154	0
+	+	151	0
+	+	154	0
+	+	150	17
+	+	169	20
+	+	188	23
+	+	68	17
+	+	87	20
+	+	106	23
+	+	23	0
+	+	18	80
+	+	19	6
+	+	144	4
+	+	231	43
+	+	245	45
+	+	276	47
+	+	277	47
+	+	278	48
+	+	293	47
+	+	294	47
+	+	295	48
+	+	245	16
+	+	245	0
+	+	19	0
+	+	36	15
+	+	44	15
+	+	64	15
+	+	146	15
+	+	149	0
+	+	29	0
+	+	30	0
+	+	32	0
+	+	28	0
+
+> /opt/lampp/htdocs/finan/app/views/cuentas/view.ctp
+	"	117	1
+	.	117	0
+	+	117	0
+
+> /opt/lampp/htdocs/finan/app/views/elements/cuentas/movimientos.ctp
+	"	26	38
+	.	26	38
+	+	26	38
+
+> /opt/lampp/htdocs/finan/app/controllers/cuentas_controller.php
+	"	36	14
+	.	21	0
+	+	21	0
+
+> /usr/share/vim/vim73/doc/help.txt
+	"	162	0
+
+> /usr/share/vim/vim73/doc/change.txt
+	"	1660	1
+
+> /usr/share/vim/vim73/doc/pattern.txt
+	"	294	57
+
+> /usr/share/vim/vim73/doc/usr_27.txt
+	"	560	0
+
+> ~/.vimrc
+	"	1	0
+	.	165	0
+	+	118	2
+	+	161	33
+	+	160	52
+	+	121	0
+	+	1	37
+	+	1	38
+	+	1	0
+	+	6	16
+	+	7	0
+	+	7	0
+	+	5	42
+	+	10	16
+	+	8	23
+	+	11	8
+	+	10	0
+	+	62	0
+	+	4	0
+	+	99	13
+	+	2	0
+	+	97	10
+	+	120	0
+	+	68	0
+	+	70	46
+	+	71	0
+	+	69	1
+	+	71	37
+	+	70	46
+	+	50	11
+	+	51	11
+	+	50	20
+	+	51	15
+	+	164	1
+	+	165	0
+
+> /opt/lampp/htdocs/finan/app/views/layouts/impr.ctp
+	"	13	5
+	.	13	5
+	+	13	5
+
+> fugitive:///opt/lampp/htdocs/finan/.git//0/app/views/personas/view.ctp
+	"	321	0
+
+> /media/PKBACK# 001/backup.git/finan/NERD_tree_1
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/Ubuntu One/rails/sample_app/app/controllers/users_controller.rb
+	"	63	0
+	^	63	0
+	.	62	7
+	+	46	0
+	+	47	0
+	+	4	1
+	+	62	7
+
+> ~/Ubuntu One/rails/sample_app/NERD_tree_1
+	"	27	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Ubuntu One/rails/sample_app/spec/requests/authentication_pages_spec.rb
+	"	113	0
+	^	113	0
+	.	113	0
+	+	15	0
+	+	112	0
+	+	113	0
+
+> ~/Ubuntu One/rails/sample_app/[BufExplorer]
+	"	1	0
+
+> ~/Ubuntu One/rails/sample_app/lib/tasks/sample_data.rake
+	"	7	48
+	.	7	48
+	+	8	0
+	+	7	48
+
+> ~/Ubuntu One/rails/sample_app/Rakefile
+	"	1	0
+
+> ~/Ubuntu One/rails/sample_app/config/application.rb
+	"	52	0
+
+> ~/Ubuntu One/rails/sample_app/config/database.yml
+	"	1	0
+
+> ~/Ubuntu One/rails/sample_app/config/environment.rb
+	"	1	0
+
+> ~/Ubuntu One/rails/sample_app/config/environments/development.rb
+	"	1	0
+
+> ~/Ubuntu One/rails/sample_app/db/development.sqlite3
+	"	1	0
+
+> ~/Ubuntu One/rails/sample_app/db/schema.rb
+	"	1	0
+
+> ~/Ubuntu One/rails/sample_app/db/seeds.rb
+	"	1	0
+
+> ~/Ubuntu One/rails/sample_app/db/test.sqlite3
+	"	1	0
+
+> ~/Ubuntu One/rails/sample_app/script/rails
+	"	2	0
+
+> ~/Ubuntu One/rails/sample_app/app/models/user.rb
+	"	1	0
+
+> ~/Ubuntu One/rails/sample_app/spec/spec_helper.rb
+	"	1	0
+
+> ~/Ubuntu One/rails/sample_app/spec/factories.rb
+	"	1	0
+	^	10	7
+	.	10	6
+	+	2	0
+	+	12	0
+	+	10	6
+
+> ~/Ubuntu One/rails/sample_app/spec/support/utilities.rb
+	"	1	0
+
+> ~/Ubuntu One/rails/sample_app/spec/models/user_spec.rb
+	"	35	0
+	^	119	0
+	.	119	0
+	+	28	30
+	+	29	0
+	+	32	0
+	+	32	0
+	+	31	25
+	+	115	38
+	+	117	32
+	+	118	0
+	+	117	0
+	+	115	1
+	+	117	0
+	+	115	2
+	+	117	0
+	+	5	0
+	+	16	0
+	+	118	3
+	+	119	0
+
+> /usr/share/vim/vim73/doc/map.txt
+	"	577	69
+
+> ~/Ubuntu One/rails/sample_app/app/views/users/_user.html.erb
+	"	7	0
+	^	7	14
+	.	7	0
+	+	7	11
+	+	1	0
+	+	7	0
+
+> ~/.vimrc.ant
+	"	1	0
+
+> ~/.vim/doc/acp.txt
+	"	116	68
+
+> /usr/share/vim/vim73/doc/options.txt
+	"	5130	16
+
+> ~/Ubuntu One/rails/sample_app/spec/requests/user_pages_spec.rb
+	"	1	0
+	^	32	0
+	.	32	0
+	+	141	49
+	+	142	68
+	+	142	90
+	+	142	106
+	+	142	128
+	+	141	0
+	+	142	0
+	+	142	0
+	+	142	0
+	+	117	4
+	+	142	0
+	+	51	0
+	+	33	0
+	+	51	2
+	+	32	0
+
+> ~/NERD_tree_1
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/NERD_tree_3
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/.gconf/desktop/gnome/interface/%gconf.xml
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.compiz-1/session/1010db5982cb75eba3133734070562087000000021620043
+	"	1	0
+
+> ~/.gtk-bookmarks
+	"	1	0
+
+> ~/compiz.perfil.unity.profile
+	"	101	30
+
+> ~/.dmrc
+	"	1	0
+
+> ~/.zshrc
+	"	1	0
+
+> ~/.config/gnome-control-center/backgrounds/last-edited.xml
+	"	1	0
+
+> ~/.config/compiz-1/compizconfig/config
+	"	1	0
+
+> ~/.config/compiz-1/compizconfig/done_upgrades
+	"	1	0
+
+> ~/.config/dconf/user
+	"	1	0
+
+> ~/.face
+	"	1	0
+
+> ~/.gnome2/Vim
+	"	1	0
+
+> ~/.gnome2/keyrings/login.keyring
+	"	1	0
+
+> ~/.gnome2/keyrings/user.keystore
+	"	1	0
+
+> ~/Ubuntu One/rails/sample_app/db/migrate/20120627214021_add_admin_to_users.rb
+	"	1	0
+
+> /opt/lampp/htdocs/finan/app/views/elements/personas/transacciones.ctp
+	"	26	35
+	^	26	36
+	.	26	35
+	+	53	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	11	0
+	+	43	8
+	+	46	0
+	+	43	8
+	+	44	4
+	+	43	0
+	+	44	82
+	+	44	95
+	+	44	101
+	+	30	0
+	+	43	31
+	+	26	35
+
+> /opt/lampp/htdocs/finan/app/views/elements/personas/tienecheques.ctp
+	"	47	107
+	^	47	108
+	.	47	107
+	+	4	0
+	+	8	0
+	+	25	0
+	+	27	27
+	+	33	0
+	+	54	0
+	+	46	28
+	+	47	8
+	+	47	140
+	+	47	107
+
+> /opt/lampp/htdocs/finan/app/views/elements/personas/traecheques.ctp
+	"	49	0
+	^	47	108
+	.	47	108
+	+	27	27
+	+	33	0
+	+	54	0
+	+	46	27
+	+	47	8
+	+	47	135
+	+	47	108
+
+> /opt/lampp/htdocs/finan/app/views/elements/personas/titularcheques.ctp
+	"	47	0
+	^	47	114
+	.	47	113
+	+	27	27
+	+	33	0
+	+	54	0
+	+	46	27
+	+	47	8
+	+	47	147
+	+	47	113
+
+> /opt/lampp/htdocs/finan/app/controllers/listas_controller.php
+	"	78	0
+	^	151	0
+	.	167	0
+	+	141	0
+	+	152	30
+	+	153	0
+	+	153	0
+	+	151	0
+	+	157	0
+	+	167	0
+
+> /opt/lampp/htdocs/finan/app/views/listas/imprimir.ctp
+	"	29	6
+	^	32	33
+	.	32	32
+	+	96	0
+	+	2	14
+	+	95	5
+	+	42	0
+	+	54	0
+	+	70	0
+	+	46	0
+	+	89	0
+	+	77	58
+	+	83	56
+	+	43	0
+	+	68	46
+	+	4	4
+	+	5	0
+	+	7	0
+	+	8	30
+	+	10	25
+	+	18	0
+	+	26	0
+	+	34	0
+	+	39	0
+	+	39	0
+	+	18	0
+	+	26	0
+	+	34	0
+	+	39	0
+	+	18	28
+	+	26	27
+	+	34	32
+	+	39	0
+	+	32	30
+	+	24	29
+	+	8	35
+	+	7	18
+	+	23	0
+	+	5	3
+	+	6	31
+	+	2	0
+	+	32	32
+
+> /opt/lampp/htdocs/finan/app/views/listas/view.ctp
+	"	62	0
+	^	48	129
+	.	48	128
+	+	48	120
+	+	48	128
+
+> /opt/lampp/htdocs/finan/app/views/listas/index.ctp
+	"	82	150
+	^	82	151
+	.	82	150
+	+	113	0
+	+	82	142
+	+	82	150
+
+> ~/Ubuntu One/rails/sample_app/app/controllers/static_pages_controller.rb
+	"	1	0
+	^	7	5
+	.	7	4
+	+	8	5
+	+	7	4
+
+> /opt/lampp/htdocs/finan/NERD_tree_2
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/.vim/bundle/vim-nerdtree-tabs/doc/vim-nerdtree-tabs.txt
+	"	84	3
+	^	1	21
+	.	1	65
+	+	1	65
+
+> ~/echo
+	"	1	0
+
+> ~/echo.txt
+	"	1	0
+
+> ~/.vim/bundle/nerdtree/doc/NERD_tree.txt
+	"	1	0
+
+> /opt/lampp/htdocs/finan/app/controllers/garantias_controller.php
+	"	1	0
+
+> ~/.vim/bundle/NERD_tree_1
+	"	9	6
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/.vim/plugin/NERD_tree.vim
+	"	3392	0
+	.	3392	0
+	+	3391	52
+	+	3392	0
+	+	3391	25
+	+	3392	132
+	+	3392	0
+
+> /usr/share/vim/vim73/doc/vi_diff.txt
+	"	30	18
+
+> /usr/share/vim/vim73/doc/editing.txt
+	"	193	12
+
+> /usr/share/vim/vim73/doc/quickref.txt
+	"	10	0
+
+> /usr/share/vim/vim73/doc/usr_07.txt
+	"	1	0
+
+> /opt/lampp/htdocs/finan/app/views/transacciones/view.ctp
+	"	77	178
+	^	77	89
+	.	77	81
+	+	77	81
+
+> /opt/lampp/htdocs/finan/app/views/transacciones/index.ctp
+	"	136	169
+	^	136	170
+	.	136	169
+	+	136	161
+	+	136	169
+
+> /opt/lampp/htdocs/finan/app/models/transaccion.php
+	"	2312	3
+	^	2	37
+	.	2311	0
+	+	786	0
+	+	791	0
+	+	786	0
+	+	794	0
+	+	854	0
+	+	862	0
+	+	2325	0
+	+	2323	0
+	+	2322	0
+	+	2320	0
+	+	2311	0
+	+	2377	61
+	+	2378	61
+	+	2380	55
+	+	2311	0
+	+	2343	0
+	+	2311	0
+	+	2326	0
+	+	2344	58
+	+	2345	6
+	+	2344	58
+	+	2345	62
+	+	2344	0
+	+	17	0
+	+	2255	0
+	+	2254	105
+	+	2261	51
+	+	2272	23
+	+	2279	54
+	+	2247	28
+	+	2265	28
+	+	2246	32
+	+	2292	0
+	+	2245	0
+	+	2249	0
+	+	2352	36
+	+	2353	0
+	+	2390	0
+	+	2389	32
+	+	2410	0
+	+	2405	0
+	+	2390	35
+	+	2394	15
+	+	2403	0
+	+	2404	0
+	+	2395	0
+	+	2390	0
+	+	2389	32
+	+	2390	42
+	+	2394	16
+	+	2390	0
+	+	2394	0
+	+	2390	54
+	+	2394	0
+	+	2404	0
+	+	2391	0
+	+	2308	0
+	+	2388	0
+	+	2407	0
+	+	2348	47
+	+	2349	0
+	+	2350	0
+	+	2351	0
+	+	2349	21
+	+	2349	20
+	+	2350	21
+	+	2348	30
+	+	2349	27
+	+	2350	31
+	+	2351	30
+	+	2350	48
+	+	2351	20
+	+	2399	0
+	+	2377	57
+	+	2380	51
+	+	2377	0
+	+	2381	1
+	+	2385	1
+	+	2377	60
+	+	2380	54
+	+	2406	55
+	+	2406	3
+	+	2406	63
+	+	2406	84
+	+	2406	0
+	+	2406	0
+	+	2406	0
+	+	2310	0
+	+	2311	0
+	+	2310	0
+	+	2406	0
+	+	921	0
+	+	916	0
+	+	929	0
+	+	928	28
+	+	3	0
+	+	13	0
+	+	3	16
+	+	2	36
+	+	2311	0
+	j	2305	3
+
+> /opt/lampp/htdocs/finan/app/models/movimiento.php
+	"	270	11
+	^	274	39
+	.	274	38
+	+	272	41
+	+	273	46
+	+	272	13
+	+	274	38
+
+> /opt/lampp/htdocs/finan/__Tag_List__
+	"	5	4
+	.	335	0
+	+	7091	0
+	+	7173	0
+	+	6970	0
+	+	6890	0
+	+	6822	0
+	+	6719	0
+	+	6639	0
+	+	6559	0
+	+	6454	0
+	+	6483	0
+	+	6409	0
+	+	6335	0
+	+	6307	0
+	+	6180	0
+	+	6260	0
+	+	6125	0
+	+	5728	0
+	+	5785	0
+	+	5789	0
+	+	5692	0
+	+	5631	0
+	+	5554	0
+	+	5216	0
+	+	5224	0
+	+	5205	0
+	+	5194	0
+	+	5131	0
+	+	4785	0
+	+	4440	0
+	+	4083	0
+	+	4439	0
+	+	4083	0
+	+	3726	0
+	+	4083	0
+	+	4082	0
+	+	3674	0
+	+	3725	0
+	+	3387	0
+	+	3050	0
+	+	3050	0
+	+	3050	0
+	+	3050	0
+	+	3049	0
+	+	2981	0
+	+	2626	0
+	+	2340	0
+	+	2266	0
+	+	1912	0
+	+	1562	0
+	+	1626	0
+	+	1551	0
+	+	1157	0
+	+	746	0
+	+	335	0
+
+> /opt/lampp/htdocs/finan/app/webroot/js/transaccion.js
+	"	386	0
+	^	386	60
+	.	386	0
+	+	385	1
+	+	382	0
+	+	386	0
+	+	403	17
+	+	383	0
+	+	403	0
+	+	386	24
+	+	386	16
+	+	403	0
+	+	386	48
+	+	403	5
+	+	387	0
+	+	403	5
+	+	403	5
+	+	387	8
+	+	403	0
+	+	403	2
+	+	403	0
+	+	386	9
+	+	386	5
+	+	386	16
+	+	386	8
+	+	386	4
+	+	386	1
+	+	386	5
+	+	386	33
+	+	387	17
+	+	403	0
+	+	387	0
+	+	403	0
+	+	405	0
+	+	403	0
+	+	403	0
+	+	405	0
+	+	403	0
+	+	394	0
+	+	403	0
+	+	401	0
+	+	394	0
+	+	386	59
+	+	394	4
+	+	386	0
+
+> /usr/share/vim/vim73/doc/syntax.txt
+	"	4754	1
+
+> /opt/lampp/etc/php.ini
+	"	445	2
