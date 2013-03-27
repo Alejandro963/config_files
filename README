@@ -2,11 +2,14 @@ My config files
 
 Install:
 
-  $ cd
-  $ ln -s config_files/.bashrc
-  $ ln -s config_files/.railsrc
-  $ ln -s config_files/.vimrc
-  $ ln -s config_files/.vim
-  $ ln -s config_files/.tmux.conf
-  $ cd config_files/.irb
-  $ make install
+  cd
+  ln -s config_files/.bashrc
+  ln -s config_files/.railsrc
+  ln -s config_files/.vimrc
+  ln -s config_files/.vim
+  ln -s config_files/.tmux.conf
+
+  cd
+  cd config_files
+  git submodule init
+  git submodule update

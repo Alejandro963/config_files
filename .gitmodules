@@ -34,6 +34,3 @@
 [submodule ".vim/bundle/vim-rvm"]
 	path = .vim/bundle/vim-rvm
 	url = git://github.com/tpope/vim-rvm.git
-[submodule ".irb"]
-	path = .irb
-	url = https://github.com/nviennot/irb-config.git
