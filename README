@@ -14,6 +14,12 @@ Install:
   git submodule init
   git submodule update
 
+  Command-t notes:
+    cd .vim/bundle/command-t/
+    cd ruby/command-t/
+    rvm use <ruby-x.y.z-pw> # ruby version used when compile vim
+    ruby extconf.rb
+    make
 
   Add irb-config
 
