@@ -95,6 +95,8 @@ set pastetoggle=<F10>
 "colorscheme molokai
 "colorscheme wombat256
 "let g:molokai_original=1
+" for background on ssh
+set term=screen-256color
 colorscheme darkZ
 
 " color para resaltar la sintaxis
