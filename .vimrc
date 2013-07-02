@@ -130,6 +130,9 @@ let Tlist_Close_On_Select = 1
 " Buffer explorer con F4
 map <f4> :BufExplorer<cr>
 
+" vim coverage rails tests
+nnoremap <silent> <F7> :so coverage.vim<CR>
+
 " switch to previous/next buffer
 nnoremap <C-p> :BufSurfBack<CR>
 nnoremap <C-n> :BufSurfForward<CR>
@@ -176,7 +179,7 @@ set colorcolumn=80,120
 "nvmap ,x :!tidy -q -i --show-errors 0<CR>
 
 " mouse en terminal
-"set mouse=a
+set mouse=a
 
 " wrap
 set nowrap
@@ -270,6 +273,7 @@ let g:browser = 'google-chrome -new-tab '
 
 " clear out a search
 nnoremap <leader>t :CommandT<cr>
+nnoremap <leader>tt :CommandTFlush<cr>\|:CommandT<cr>
 " find file
 "map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 " find file in current directory
@@ -284,10 +288,11 @@ map <leader>tp :CommandTFlush<cr>\|:CommandT public<cr>
 map <leader>ts :CommandTFlush<cr>\|:CommandT spec<cr>
 map <leader>tf :CommandTFlush<cr>\|:CommandT features<cr>
 map <leader>ta :CommandTFlush<cr>\|:CommandT app/assets<cr>
+map <leader>td :CommandTFlush<cr>\|:CommandT app/decorators<cr>
 
 " surround
 " usar con yss- (en la línea)
-autocmd FileType ruby,eruby let g:surround_45 = "<% \r %>"
+autocmd FileType ruby,eruby let g:surround_45 = "<% \r -%>"
 " usar con yss= (en la línea)
 autocmd FileType ruby,eruby let g:surround_61 = "<%= \r %>"
 
@@ -297,13 +302,24 @@ set shortmess+=A
 " Screen settings
 let g:ScreenImpl = 'Tmux'
 let g:ScreenShellTmuxInitArgs = '-2'
-let g:ScreenShellInitialFocus = 'shell'
-let g:ScreenShellQuitOnVimExit = 0
-map <F6> :ScreenShellVertical<CR>
+"let g:ScreenShellInitialFocus = 'shell'
+"let g:ScreenShellQuitOnVimExit = 0
+map <F6> :ScreenShell<CR>
 command -nargs=? -complete=shellcmd W  :w | :call ScreenShellSend("load '".@%."';")
-map <Leader>s :w<CR> :call ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
-map <Leader>S :w<CR> :call ScreenShellSend("rake rspec ".@% . ':' . line('.'))<CR>
-map <Leader>e :w<CR> :call ScreenShellSend("cucumber --format=pretty ".@% . ':' . line('.'))<CR>
-map <Leader>E :w<CR> :call ScreenShellSend("rake cucumber --format=pretty ".@% . ':' . line('.'))<CR>
+map <Leader>s :w<CR> :call ScreenShellSend("spring rspec ".@% . ':' . line('.'))<CR>
+map <Leader>S :w<CR> :call ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
+map <Leader>e :w<CR> :call ScreenShellSend("spring cucumber --format=pretty ".@% . ':' . line('.'))<CR>
+map <Leader>E :w<CR> :call ScreenShellSend("cucumber --format=pretty ".@% . ':' . line('.'))<CR>
 map <Leader>b :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
+
+" Simple re-format for minified Javascript
+command! UnMinify call UnMinify()
+function! UnMinify()
+    %s/{\ze[^\r\n]/{\r/g
+    %s/){/) {/g
+    %s/};\?\ze[^\r\n]/\0\r/g
+    %s/;\ze[^\r\n]/;\r/g
+    %s/[^\s]\zs[=&|]\+\ze[^\s]/ \0 /g
+    normal ggVG=
+endfunction
 

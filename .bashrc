@@ -122,7 +122,7 @@ fi
 alias finan='cd ~/web/finan'
 alias one='cd ~/Ubuntu\ One'
 alias rls='cd ~/rails'
-alias wip='mycd ~/rails/finan/'
+alias wip='cd ~/rails/initapp'
 alias dropbox='dropbox start -i'
 alias ror='cd ~/Manuales/Ruby_Rails_Books/rails/rails'
 alias rmsw='find -name "*.sw?" -delete'
@@ -131,7 +131,7 @@ alias t="tree -L $1"
 source ~/.git-completion.bash
 
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin:/home/alejandro/Programas/phantomjs/bin # Add RVM to PATH for scripting
 [[ -s "/home/alejandro/.rvm/scripts/rvm" ]] && source "/home/alejandro/.rvm/scripts/rvm"
 
 [ -z "$TMUX" ] && export TERM=xterm-256color

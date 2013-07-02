@@ -1,11 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/usr/share/git-core/templates/hooks'
-let g:netrw_dirhist_2='/home/alejandro/.gconf/desktop/gnome/interface'
-let g:netrw_dirhist_3='/etc'
-let g:netrw_dirhist_4='/usr/share/icons'
-let g:netrw_dirhist_5='/usr/share/icons/gnome'
-let g:netrw_dirhist_6='/usr/share/icons/gnome/16x16'
-let g:netrw_dirhist_7='/usr/share/icons/gnome/16x16/actions'
-let g:netrw_dirhist_8='/etc/php5/apache2'
-let g:netrw_dirhist_9='/home/alejandro/.rvm/gems/ruby-1.9.3-p327@rails329/gems/rails-3.2.9'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/home/alejandro/rails/finan'
+let g:netrw_dirhist_2='/usr/share/pyshared/zim'
