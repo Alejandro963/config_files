@@ -33,12 +33,12 @@ let g:Powerline_mode_s = 'S'
 let g:Powerline_mode_S = 'SL'
 let g:Powerline_mode_cs= 'SB'
 if ! has('gui_running')
-    set ttimeoutlen=10
-    augroup FastEscape
-        autocmd!
-        au InsertEnter * set timeoutlen=0
-        au InsertLeave * set timeoutlen=1000
-    augroup END
+  set ttimeoutlen=10
+  augroup FastEscape
+      autocmd!
+      au InsertEnter * set timeoutlen=0
+      au InsertLeave * set timeoutlen=1000
+  augroup END
 endif
 
 " usamos f12 para acceder a f1, para terminal
@@ -108,12 +108,12 @@ au GUIEnter * set lines=80 columns=160
 "" F3 para habilitar NERDTree
 map <f3> :NERDTreeToggle<cr>
 "if !&diff
-  "autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 "" Open NERDTree on console vim startup
-  "let g:nerdtree_tabs_open_on_console_startup = 1
-  "let g:nerdtree_tabs_focus_on_files = 1
-  let g:NERDTreeShowHidden=1
-  let g:NERDTreeWinSize=50
+"let g:nerdtree_tabs_open_on_console_startup = 1
+"let g:nerdtree_tabs_focus_on_files = 1
+let g:NERDTreeShowHidden=1
+let g:NERDTreeWinSize=50
 "endif
 
 " Plugin taglist
@@ -315,11 +315,11 @@ map <Leader>b :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
 " Simple re-format for minified Javascript
 command! UnMinify call UnMinify()
 function! UnMinify()
-    %s/{\ze[^\r\n]/{\r/g
-    %s/){/) {/g
-    %s/};\?\ze[^\r\n]/\0\r/g
-    %s/;\ze[^\r\n]/;\r/g
-    %s/[^\s]\zs[=&|]\+\ze[^\s]/ \0 /g
-    normal ggVG=
+  %s/{\ze[^\r\n]/{\r/g
+  %s/){/) {/g
+  %s/};\?\ze[^\r\n]/\0\r/g
+  %s/;\ze[^\r\n]/;\r/g
+  %s/[^\s]\zs[=&|]\+\ze[^\s]/ \0 /g
+  normal ggVG=
 endfunction
 

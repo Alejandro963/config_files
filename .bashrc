@@ -1,9 +1,8 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
+# ~/.bashrc: executed by bash(1) for non-login shells.  # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc) # for examples
 
 export EDITOR=vim
 export VISUAL=vim
+export LANGUAGE=en
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -122,13 +121,13 @@ fi
 alias finan='cd ~/web/finan'
 alias one='cd ~/Ubuntu\ One'
 alias rls='cd ~/rails'
-alias wip='cd ~/rails/initapp'
+alias wip='cd ~/rails/rfinan/'
 alias dropbox='dropbox start -i'
-alias ror='cd ~/Manuales/Ruby_Rails_Books/rails/rails'
 alias rmsw='find -name "*.sw?" -delete'
 alias t="tree -L $1"
 
-source ~/.git-completion.bash
+source ~/config_files/.git-completion.bash
+source ~/config_files/.git-flow-completion.bash
 
 
 PATH=$PATH:$HOME/.rvm/bin:/home/alejandro/Programas/phantomjs/bin # Add RVM to PATH for scripting

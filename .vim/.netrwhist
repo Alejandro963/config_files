@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/alejandro/rails/finan'
 let g:netrw_dirhist_2='/usr/share/pyshared/zim'
+let g:netrw_dirhist_3='/usr/share/X11/xkb/symbols'
+let g:netrw_dirhist_4='/home/alejandro/rails/try/myapp/spec/support'
