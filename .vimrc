@@ -289,6 +289,7 @@ map <leader>ts :CommandTFlush<cr>\|:CommandT spec<cr>
 map <leader>tf :CommandTFlush<cr>\|:CommandT features<cr>
 map <leader>ta :CommandTFlush<cr>\|:CommandT app/assets<cr>
 map <leader>td :CommandTFlush<cr>\|:CommandT app/decorators<cr>
+map <leader>tr :CommandTFlush<cr>\|:CommandT app/services<cr>
 
 " surround
 " usar con yss- (en la línea)
