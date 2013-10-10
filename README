@@ -9,6 +9,14 @@ Install:
   ln -s config_files/.vim
   ln -s config_files/.tmux.conf
 
+  zsh:
+    sudo apt-get install -y zsh
+    git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+    remove .oh-my-zsh/custom dir
+    ln -s config_files/.oh-my-zsh/custom ~/.oh-my-zsh/custom
+    ln -s config_files/.zshrc
+    chsh -s /bin/zsh
+
   cd
   cd config_files
   git submodule init
