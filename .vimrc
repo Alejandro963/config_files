@@ -108,13 +108,13 @@ au GUIEnter * set lines=80 columns=160
 "" F3 para habilitar NERDTree
 map <f3> :NERDTreeToggle<cr>
 "if !&diff
-"autocmd vimenter * NERDTree
-"" Open NERDTree on console vim startup
-"let g:nerdtree_tabs_open_on_console_startup = 1
-"let g:nerdtree_tabs_focus_on_files = 1
-let g:NERDTreeShowHidden=1
-let g:NERDTreeWinSize=50
+  "autocmd vimenter * NERDTree
+  "" Open NERDTree on console vim startup
+  "let g:nerdtree_tabs_open_on_console_startup = 1
+  "let g:nerdtree_tabs_focus_on_files = 1
 "endif
+let g:NERDTreeShowHidden=1
+let g:NERDTreeWinSize=40
 
 " Plugin taglist
 " F5 muestra el frame de tags
@@ -215,8 +215,8 @@ inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
-" cambiar 2 espacios por tab (saqué /g por gdefault)
-nnoremap <leader>t :%s/\ \ /<tab><CR>
+" cambiar tab por 2 espacios (saqué /g por gdefault)
+nnoremap <leader>T :%s/<tab>/\ \ <CR>
 
 " moving in i mode
 imap HH <left>
@@ -228,6 +228,11 @@ imap LL <right>
 nmap n nzz
 nmap N Nzz
 nmap ? ?zz
+
+" Hard to type
+"imap uu _
+imap hh =>
+"imap aa @
 
 " I have a ,v mapping to reselect the text that was just pasted so I can
 " perform commands (like indentation) on it:
@@ -322,5 +327,31 @@ function! UnMinify()
   %s/;\ze[^\r\n]/;\r/g
   %s/[^\s]\zs[=&|]\+\ze[^\s]/ \0 /g
   normal ggVG=
+endfunction
+
+augroup MyAutoCmd
+    autocmd!
+    autocmd MyAutoCmd BufWritePost $MYVIMRC nested source $MYVIMRC
+augroup END
+
+" Tabularize tomado de: http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
+" ver: https://github.com/godlygeek/tabular
+if exists(":Tabularize")
+  nmap <leader>a= :Tabularize /=<CR>
+  vmap <leader>a= :Tabularize /=<CR>
+  nmap <leader>a: :Tabularize /:\zs<CR>
+  vmap <leader>a: :Tabularize /:\zs<CR>
+endif
+
+inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
+function! s:align()
+  let p = '^\s*|\s.*\s|\s*$'
+  if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
+    let column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
+    let position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
+    Tabularize/|/l1
+    normal! 0
+    call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
+  endif
 endfunction
 

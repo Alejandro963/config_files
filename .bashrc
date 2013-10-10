@@ -125,10 +125,32 @@ alias wip='cd ~/rails/rfinan/'
 alias dropbox='dropbox start -i'
 alias rmsw='find -name "*.sw?" -delete'
 alias t="tree -L $1"
+# Navigation
+alias ..='cd ..'
+alias ...='cd .. ; cd ..'
+alias h='cd ~'
+alias c='clear'
+# RAILS 3
+alias rs='rails server'
+alias rc='rails console'
+alias rg='rails generate'
+alias rp='rails plugin install'
+#alias ano="annotate -p before -m -s -e test -e fixtures"
+## Pipe Aliases (Global)
+#alias -g L='|less'
+#alias -g G='|grep'
+#alias -g T='|tail'
+#alias -g H='|head'
+#alias -g W='|wc -l'
+#alias -g S='|sort'
 
 source ~/config_files/.git-completion.bash
 source ~/config_files/.git-flow-completion.bash
 
+# Completion from https://github.com/suborx/dotfiles/blob/master/.bashrc
+bind "set completion-ignore-case on" # note: bind used instead of sticking these in .inputrc
+bind "set show-all-if-ambiguous On" # show list automatically, without double tab
+bind "set bell-style none" # no bell
 
 PATH=$PATH:$HOME/.rvm/bin:/home/alejandro/Programas/phantomjs/bin # Add RVM to PATH for scripting
 [[ -s "/home/alejandro/.rvm/scripts/rvm" ]] && source "/home/alejandro/.rvm/scripts/rvm"
