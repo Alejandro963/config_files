@@ -77,7 +77,9 @@ map <c-t> <esc>:tabnew<cr>
 " Control PageUp/PageDown cambiar de pestaña
 " con control no funciono tmux así que lo saqué
 map <pageup> :tabp<cr>
+map <leader>p :tabp<cr>
 map <pagedown> :tabn<cr>
+map <leader>n :tabn<cr>
 
 " F10 activa modo pegar (no autoindenta, no descoloca lo que pegamos), F11
 " lo desactiva
@@ -175,6 +177,8 @@ set wildmode=list:longest,full
 set colorcolumn=80,120
 "set colorcolumn=80
 
+"set winheight=7
+"set winminheight=7
 " tidy
 "nvmap ,x :!tidy -q -i --show-errors 0<CR>
 
@@ -184,6 +188,10 @@ set mouse=a
 " wrap
 set nowrap
 
+" Map ee to open file in same directory as the current file
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+map <leader>ee :edit %%
+
 "I use ,W to mean “strip all trailing whitespace in the current file” so I can
 "clean things up quickly:
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
@@ -192,6 +200,14 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 " Because really, how often do you split your window and not want to do
 " something in the new split?
 nnoremap <leader>w <C-w>v<C-w>l
+" from: https://github.com/vijaydev/dotfiles/blob/master/vimrc
+nnoremap ss <C-w>s
+nnoremap vv <C-w>v
+imap <leader>h #{}<Esc>hi
+imap <C-H> =><Space>
+imap <silent> <C-K> <%  %><Esc>2hi
+imap <silent> <C-G> <% end %><CR>
+imap <silent> <C-L> <%=  %><Esc>2hi
 
 " This next set of mappings maps <C-[h/j/k/l]> to the commands needed to move
 " around your splits.
@@ -316,7 +332,7 @@ map <Leader>s :w<CR> :call ScreenShellSend("spring rspec ".@% . ':' . line('.'))
 map <Leader>S :w<CR> :call ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
 map <Leader>e :w<CR> :call ScreenShellSend("spring cucumber --format=pretty ".@% . ':' . line('.'))<CR>
 map <Leader>E :w<CR> :call ScreenShellSend("cucumber --format=pretty ".@% . ':' . line('.'))<CR>
-map <Leader>b :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
+"map <Leader>b :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
 
 " Simple re-format for minified Javascript
 command! UnMinify call UnMinify()

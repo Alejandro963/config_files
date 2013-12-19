@@ -42,7 +42,7 @@ DISABLE_AUTO_UPDATE="true"
 DISABLE_CORRECTION="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment following line if you want to disable marking untracked files under
 # VCS as dirty. This makes repository status check for large repositories much,
@@ -52,8 +52,7 @@ DISABLE_CORRECTION="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github git-flow cap gem zsh-syntax-highlighting bundler vi-mode rvm ale)
-#plugins=(ale)
+plugins=(git github git-flow cap gem bundler vi-mode rvm ale rails3)
 
 
 source $ZSH/oh-my-zsh.sh
@@ -107,35 +106,16 @@ esac
 
 unset color_prompt force_color_prompt
 
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
-
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
 # alias AEB
+alias ll='ls -alFh'
 alias finan='cd ~/web/finan'
 alias one='cd ~/Ubuntu\ One'
 alias rls='cd ~/rails'
@@ -143,25 +123,17 @@ alias wip='cd ~/rails/rfinan/'
 alias dropbox='dropbox start -i'
 alias rmsw='find -name "*.sw?" -delete'
 alias t="tree -L $1"
-# Navigation
-alias ..='cd ..'
-alias ...='cd .. ; cd ..'
-alias h='cd ~'
-alias c='clear'
-# RAILS 3
-alias rs='rails server'
-alias rc='rails console'
-alias rg='rails generate'
-alias rp='rails plugin install'
-#alias ano="annotate -p before -m -s -e test -e fixtures"
+alias clocall='~/Programas/cloc/cloc-1.56.pl --force-lang="HTML",erb --force-lang="CSS",scss --force-lang="Ruby",feature lib app spec config db features'
+alias cloc='~/Programas/cloc/cloc-1.56.pl --force-lang="HTML",erb --force-lang="CSS",scss --force-lang="Ruby",feature'
+
 ## Pipe Aliases (Global)
 alias -g L='|less'
+alias -g LG=' --color=always |less -R'
 alias -g G='|grep'
 alias -g T='|tail'
 alias -g H='|head'
 alias -g W='|wc -l'
 alias -g S='|sort'
-
 unsetopt auto_name_dirs
 rvm_project_rvmrc=1
 PATH=$PATH:$HOME/.rvm/bin:/home/alejandro/Programas/phantomjs/bin # Add RVM to PATH for scripting
@@ -175,3 +147,5 @@ function git_diff() {
   git diff --no-ext-diff -w "$@" | vim -R -
 }
 
+# c-s & c-q disable for work with vim
+stty -ixon
