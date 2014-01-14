@@ -1,3 +1,4 @@
 .vim/plugin/ri_vim_cache
-.vim/doc/tags
 .*.s[a-w][a-z]
+.vim/.netrwhist
+.vim/doc/tags

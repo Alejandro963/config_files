@@ -183,7 +183,7 @@ set colorcolumn=80,120
 "nvmap ,x :!tidy -q -i --show-errors 0<CR>
 
 " mouse en terminal
-set mouse=a
+"set mouse=a
 
 " wrap
 set nowrap
@@ -203,10 +203,10 @@ nnoremap <leader>w <C-w>v<C-w>l
 " from: https://github.com/vijaydev/dotfiles/blob/master/vimrc
 nnoremap ss <C-w>s
 nnoremap vv <C-w>v
-imap <leader>h #{}<Esc>hi
+imap <silent> <leader>h #{}<Esc>hi
 imap <C-H> =><Space>
-imap <silent> <C-K> <%  %><Esc>2hi
-imap <silent> <C-G> <% end %><CR>
+imap <silent> <C-K> <%  -%><Esc>3hi
+imap <silent> <C-G> <% end -%><CR>
 imap <silent> <C-L> <%=  %><Esc>2hi
 
 " This next set of mappings maps <C-[h/j/k/l]> to the commands needed to move
