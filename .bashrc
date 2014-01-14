@@ -4,6 +4,14 @@
 
 export EDITOR=vim
 export VISUAL=vim
+export LANGUAGE=en
+
+export RBENV_ROOT="${HOME}/.rbenv"
+
+if [ -d "${RBENV_ROOT}" ]; then
+  export PATH="${RBENV_ROOT}/bin:${PATH}"
+  eval "$(rbenv init -)"
+fi
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
