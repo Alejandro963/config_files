@@ -1,9 +1,0 @@
-= ActiveRecord::ActiveRecordError < StandardError
-
-(from gem activerecord-3.2.9)
-------------------------------------------------------------------------------
-= Active Record Errors
-
-Generic Active Record exception class.
-
-
