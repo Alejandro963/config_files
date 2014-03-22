@@ -65,6 +65,10 @@ bindkey -M viins \\C-R history-incremental-search-backward
 export EDITOR=vim
 export VISUAL=vim
 export LANGUAGE=en
+# testing en netbook con rspec, error: * glibc detected * ruby: double free or corruption (!prev)
+export MALLOC_CHECK_=2
+
+export GREP_OPTIONS='--color=auto --binary-files=without-match'
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -125,6 +129,7 @@ alias rmsw='find -name "*.sw?" -delete'
 alias t="tree -L $1"
 alias clocall='~/Programas/cloc/cloc-1.56.pl --force-lang="HTML",erb --force-lang="CSS",scss --force-lang="Ruby",feature lib app spec config db features'
 alias cloc='~/Programas/cloc/cloc-1.56.pl --force-lang="HTML",erb --force-lang="CSS",scss --force-lang="Ruby",feature'
+alias h='fc -lid 1'
 
 ## Pipe Aliases (Global)
 alias -g L='|less'
